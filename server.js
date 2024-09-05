@@ -105,6 +105,11 @@ const personRoutes=require('./routes/personRoutes');
 app.use('/person',personRoutes);
 
 
+const menuItemRoutes=require('./routes/menuItemRouter');
+
+app.use('/menu',menuItemRoutes);
+
+
   
 
 app.listen(3000, () => {
