@@ -67,6 +67,8 @@ app.use(bodyParser.json());
 
 const Person = require('./models/Person');
 const db = require('./db');
+require('dotenv').config();
+
 
 // Use POST instead of GET
 
@@ -111,9 +113,9 @@ app.use('/menu',menuItemRoutes);
 
 
   
-
-app.listen(3000, () => {
-    console.log('Listening on port 3000');
+const PORT = process.env.PORT || 3000; // Use 3001 or another available port
+app.listen(PORT, () => {
+    console.log(`Listening on port ${PORT}`);
 });
 
 

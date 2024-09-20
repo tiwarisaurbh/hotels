@@ -31,3 +31,19 @@ const menuItemSchema = new mongoose.Schema({
 const MenuItem = mongoose.model('MenuItem', menuItemSchema);
 
 module.exports = MenuItem;
+
+
+
+//git command
+// git init
+//git status
+//git add server.js
+//git add .*
+
+//git ignore to avoid node module(gitignore)
+
+// git commit -m "version first"
+
+// hosting mongodb
+
+
